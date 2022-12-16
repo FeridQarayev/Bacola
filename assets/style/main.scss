@@ -274,6 +274,7 @@ body{
                 &__card{
                     margin-left: 0.9375rem;
                     display: flex;
+                    position: relative;
                     a{
                         display: flex;
                         align-items: center;
@@ -317,6 +318,90 @@ body{
                             font-size: .625rem;
                             min-width: 1.0625rem;
                             height: 1.0625rem;
+                        }
+                    }
+                    &__container{
+                        position: absolute;
+                        min-width: 18.75rem;
+                        max-width: 20rem;
+                        top: 100%;
+                        right: 0;
+                        z-index: 100;
+                        padding-top: 0.625rem;
+                        opacity: 0;
+                        visibility: hidden;
+                        pointer-events: none;
+                        will-change: transform,opacity;
+                        transition: all 0.25s cubic-bezier(.17,.62,.44,.99);
+                        &__body{
+                            padding: 1.25rem;
+                            background-color: #fff;
+                            box-shadow: 0 5px 10px rgb(62 68 90 / 10%);
+                            border: 1px solid #edeef5;
+                            border-radius: 7px;
+                            &__content{
+                                &__empty{
+                                    display: flex;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    margin-top: 1.875rem;
+                                    margin-bottom: 3.125rem;
+                                    &__icon{
+                                        position: relative;
+                                        text-align: center;
+                                        width: 3.75rem;
+                                        height: 3.75rem;
+                                        border-radius: 50%;
+                                        background-color: #eaecef;
+                                        overflow: hidden;
+                                        svg{
+                                            width: 2.75rem;
+                                            overflow: hidden;
+                                            vertical-align: middle;
+                                            text-align: center;
+                                            .c-01{
+                                                fill: #b7343e;
+                                            }
+                                            .c-02{
+                                                fill: #f04652;;
+                                            }
+                                            .c-03{
+                                                fill: #f04652;
+                                            }
+                                            .c-04{
+                                                fill: #ab212b;
+                                            }
+                                            .c-05{
+                                                fill: #c13942;
+                                            }
+                                            .c-06{
+                                                fill: #c13942;
+                                            }
+                                            .c-07{
+                                                fill: rgb(253, 251, 247);
+                                            }
+                                        }
+                                    }
+                                    &__text{
+                                        font-size: .8125rem;
+                                        font-weight: 600;
+                                        margin-top: 0.9375rem;
+                                    }
+                                }
+                            }
+                            &__noticy{
+                                font-size: .75rem;
+                                text-align: center;
+                                padding-top: 1.25rem;
+                                border-top: 1px solid #edeef5;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .header__middle__container__right__card__container{
+                            opacity: 1;
+                            visibility: visible;
+                            pointer-events: auto;
                         }
                     }
                 }

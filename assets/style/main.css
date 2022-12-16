@@ -274,6 +274,7 @@ body {
 .header__middle__container__right__card {
   margin-left: 0.9375rem;
   display: flex;
+  position: relative;
 }
 .header__middle__container__right__card a {
   display: flex;
@@ -319,6 +320,86 @@ body {
   font-size: 0.625rem;
   min-width: 1.0625rem;
   height: 1.0625rem;
+}
+.header__middle__container__right__card__container {
+  position: absolute;
+  min-width: 18.75rem;
+  max-width: 20rem;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  padding-top: 0.625rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  will-change: transform, opacity;
+  transition: all 0.25s cubic-bezier(0.17, 0.62, 0.44, 0.99);
+}
+.header__middle__container__right__card__container__body {
+  padding: 1.25rem;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(62, 68, 90, 0.1);
+  border: 1px solid #edeef5;
+  border-radius: 7px;
+}
+.header__middle__container__right__card__container__body__content__empty {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+.header__middle__container__right__card__container__body__content__empty__icon {
+  position: relative;
+  text-align: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background-color: #eaecef;
+  overflow: hidden;
+}
+.header__middle__container__right__card__container__body__content__empty__icon svg {
+  width: 2.75rem;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
+.header__middle__container__right__card__container__body__content__empty__icon svg .c-01 {
+  fill: #b7343e;
+}
+.header__middle__container__right__card__container__body__content__empty__icon svg .c-02 {
+  fill: #f04652;
+}
+.header__middle__container__right__card__container__body__content__empty__icon svg .c-03 {
+  fill: #f04652;
+}
+.header__middle__container__right__card__container__body__content__empty__icon svg .c-04 {
+  fill: #ab212b;
+}
+.header__middle__container__right__card__container__body__content__empty__icon svg .c-05 {
+  fill: #c13942;
+}
+.header__middle__container__right__card__container__body__content__empty__icon svg .c-06 {
+  fill: #c13942;
+}
+.header__middle__container__right__card__container__body__content__empty__icon svg .c-07 {
+  fill: rgb(253, 251, 247);
+}
+.header__middle__container__right__card__container__body__content__empty__text {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-top: 0.9375rem;
+}
+.header__middle__container__right__card__container__body__noticy {
+  font-size: 0.75rem;
+  text-align: center;
+  padding-top: 1.25rem;
+  border-top: 1px solid #edeef5;
+}
+.header__middle__container__right__card:hover .header__middle__container__right__card__container {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .header__down {
   background-color: #ffffff;
