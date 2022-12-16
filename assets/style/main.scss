@@ -61,6 +61,9 @@ body{
                         &:first-child{
                             margin-left: 0;
                         }
+                        &:hover{
+                            color: #2bbef9;
+                        }
                     }
                 }
             }
@@ -84,10 +87,16 @@ body{
                     margin-left: 1.125rem;
                     padding-left: 1.125rem;
                     border-left: 1px solid #edeef5;
-                    strong{
-                        transition: all 0.2s cubic-bezier(.28,.12,.22,1);
-                        color: #2bbef9;
-                        font-weight: bolder;
+                    a{
+                        strong{
+                            transition: all 0.2s cubic-bezier(.28,.12,.22,1);
+                            color: #2bbef9 !important;
+                            font-weight: bolder;
+                        }
+                        &:hover{
+                            color: #0056b3;
+                            text-decoration: underline !important;
+                        }
                     }
                 }
                 &__right{
@@ -106,6 +115,10 @@ body{
                             margin-left: 0.9375rem;
                             &:first-child{
                                 margin-left: 0;
+                            }
+                            &:hover{
+                                color: #2bbef9;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -168,6 +181,12 @@ body{
                             position: absolute;
                             top:40%;
                             right: 15px;
+                        }
+                        &:hover{
+                            background-color: #ffffff !important;
+                            color: #3e445a !important;
+                            border-color: #d9d9e9 !important;
+                            box-shadow: 0 3px 5px rgb(0 0 0 / 9%);
                         }
                     }
                     &__down{
@@ -431,6 +450,14 @@ body{
                                     }
                                 }
                             }
+                            &:hover{
+                                a{
+                                    color: #2bbef9;
+                                    i{
+                                        color: #2bbef9;
+                                    }
+                                }
+                            }
                         }
                         .downlink{
                             border-top: 1px solid #d9d9e9;
@@ -490,6 +517,10 @@ body{
                                 opacity: .5;
                                 top: -1px;
                                 margin-right: 0.4375rem;
+                            }
+                            &:hover{
+                                background-color: #f0faff;
+                                color: #2bbef9;
                             }
                         }
 
