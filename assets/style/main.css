@@ -855,6 +855,266 @@ body {
 .main__body__sections__top__container__right__body ul li .active::before {
   opacity: 1 !important;
 }
+.main__body__sections__middle {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.main__body__sections__middle__body {
+  max-width: 1200px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.main__body__sections__middle__body__left {
+  width: 25%;
+}
+.main__body__sections__middle__body__left__content {
+  padding: 15px;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.main__body__sections__middle__body__left__content__banner1 {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.main__body__sections__middle__body__left__content__banner1__body {
+  transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  position: relative;
+  color: #717783;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  border-radius: 7px;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__content {
+  padding-top: 2.5rem;
+  max-width: 100%;
+  position: absolute;
+  padding: 1.875rem 2.5rem;
+  z-index: 1;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__content__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__content__header__text {
+  font-size: 0.8125rem;
+  margin-right: 1.875rem;
+  color: #fff;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__content__main {
+  color: #202435;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__content__main h4 {
+  font-weight: 200;
+  font-size: 1.375rem;
+  letter-spacing: -0.8px;
+  margin-bottom: 5px;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__content__main h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__content__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.9375rem;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__content__footer__text {
+  margin-bottom: 5px;
+  line-height: 1;
+  font-size: 0.75rem;
+  margin-right: 8px;
+  color: #202435;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__content__footer__price {
+  line-height: 1;
+  position: relative;
+  font-size: 1.875rem;
+  bottom: -1px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #d51243;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__thumbnail {
+  position: relative;
+}
+.main__body__sections__middle__body__left__content .banner__wrapper__thumbnail img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.main__body__sections__middle__body__left__content__banner2 {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.main__body__sections__middle__body__left__content__banner2__body {
+  position: relative;
+  color: #717783;
+  transition: 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.main__body__sections__middle__body__left__content__banner2__body a {
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+  height: 2.125rem;
+  border-radius: 1.875rem !important;
+  border: 1px solid;
+  color: #fff;
+  background-color: #2bbef9;
+  border-color: #2bbef9;
+  padding: 0 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+.main__body__sections__middle__body__left__content__banner2__body .banner__wrapper__content__header__text {
+  color: #717783;
+}
+.main__body__sections__middle__body__left__content__icon-list {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.main__body__sections__middle__body__left__content__icon-list__body {
+  position: relative;
+  color: #71778e;
+  border: 1px solid #e4e5ee;
+  border-radius: 7px;
+}
+.main__body__sections__middle__body__left__content__icon-list__body .item {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  color: #202435;
+}
+.main__body__sections__middle__body__left__content__icon-list__body .item__icon {
+  flex: 0 0 2.5rem;
+  max-width: 2.5rem;
+  margin-right: 0.9375rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+.main__body__sections__middle__body__left__content__icon-list__body .item__text {
+  font-size: 0.75rem;
+}
+.main__body__sections__middle__body__left__content__product-list {
+  margin-bottom: 50px;
+  width: 100%;
+}
+.main__body__sections__middle__body__left__content__product-list__container h4 {
+  font-family: "Dosis", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: 1.25rem;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body {
+  position: relative;
+  color: #71778e;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list {
+  display: flex;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item {
+  border: 0;
+  position: relative;
+  flex: 1 1 0px;
+  min-width: 0;
+  z-index: 1;
+  transition: z-index 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0.9375rem;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__thumbnail {
+  flex: 0 0 4.375rem;
+  max-width: 4.375rem;
+  max-height: 4.375rem;
+  margin-right: 0.75rem;
+  padding: 0;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__thumbnail a {
+  position: relative;
+  display: block;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__thumbnail a img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content {
+  font-size: 0.6875rem;
+  margin-bottom: 5px !important;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__title {
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 0.8125rem !important;
+  letter-spacing: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__title a {
+  display: flex;
+  color: #202435;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__meat {
+  font-size: 0.6875rem;
+  margin-bottom: 5px !important;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__price {
+  display: block;
+  margin-bottom: 0.625rem;
+  font-size: 1rem !important;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__price__left {
+  color: #2c2cd3;
+  font-family: "Dosis", sans-serif;
+  text-decoration: line-through;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__price__right {
+  text-decoration: none;
+  margin-left: 0.3125rem;
+  color: #d51234;
+  font-family: "Dosis", sans-serif;
+}
+.main__body__sections__middle__body__right {
+  width: 75%;
+}
 .main__body__sections__top__container__right__body__slider::-webkit-scrollbar {
   width: 0;
 }
