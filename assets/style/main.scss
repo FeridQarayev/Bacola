@@ -681,6 +681,7 @@ body{
                             height: 100%;
                             opacity: 1;
                             max-height: none;
+                            // overflow-x: scroll;
                             &__slider{
                                 width: 100%;
                                 height: 100%;
@@ -691,114 +692,127 @@ body{
                                 position: relative;
                                 overflow: hidden!important;
                                 border-radius: 7px;
-                                display: block;
+                                display: flex;
                                 margin: 0;
                                 padding: 0;
+                                overflow-x:scroll;
+                                width: 6090px !important;
+                                // transform: translate3d(-870px, 0px, 0px);
                                 #slide-1{
+                                    width: 870px !important;
+                                    height: 100% !important;
+                                }
+                                #slide-2{
                                     width: 870px;
                                     height: 100%;
-                                    .slider__item{
-                                        position: relative;
-                                        display: flex !important;
-                                        align-items: center;
-                                        width: 100%;
-                                        height: 100%;
-                                        &__content__wrapper{
-                                            padding: 1.875rem 1.5rem;
-                                            z-index: 1;
-                                            position: absolute;
-                                            padding-left: 5rem;
-                                            padding-right: 5rem;
-                                            max-width: 70%;
-                                            &__header{
-                                                display: flex;
-                                                align-items: center;
-                                                margin-bottom: 0.9375rem;
-                                                &__description{
-                                                    font-size: .75rem;
-                                                    font-weight: 600;
-                                                    text-transform: uppercase;
-                                                    letter-spacing: 1px;
-                                                    font-family: 'Dosis', sans-serif;
-                                                }
-                                                &__discount{
-                                                    position: relative;
-                                                    font-family: 'Dosis', sans-serif;
-                                                    font-size: .875rem;
-                                                    font-weight: 600;
-                                                    text-transform: uppercase;
-                                                    letter-spacing: 1px;
-                                                    color: #038e42;
-                                                    margin-left: 1.25rem;
-                                                    &::before{
-                                                        position: absolute;
-                                                        content: '';
-                                                        top: -5px;
-                                                        bottom: -5px;
-                                                        left: -0.75rem;
-                                                        right: -0.75rem;
-                                                        background: linear-gradient(90deg,rgba(0,184,83,.2) 0%,rgba(32,55,88,0) 100%);
-                                                        border-radius: 2.5rem;
-                                                        z-index: -1;
-                                                    }
-                                                }
+                                    // display: none;
+                                }
+                                #slide-3{
+                                    // display: none;
+                                    width: 870px;
+                                    height: 100%;
+                                }
+                                .slider__item{
+                                    position: relative;
+                                    display: flex !important;
+                                    align-items: center;
+                                    width: 100%;
+                                    height: 100%;
+                                    &__content__wrapper{
+                                        padding: 1.875rem 1.5rem;
+                                        z-index: 1;
+                                        position: absolute;
+                                        padding-left: 5rem;
+                                        padding-right: 5rem;
+                                        max-width: 70%;
+                                        &__header{
+                                            display: flex;
+                                            align-items: center;
+                                            margin-bottom: 0.9375rem;
+                                            &__description{
+                                                font-size: .75rem;
+                                                font-weight: 600;
+                                                text-transform: uppercase;
+                                                letter-spacing: 1px;
+                                                font-family: 'Dosis', sans-serif;
                                             }
-                                            &__main{
-                                                margin-bottom: 0.9375rem;
-                                                h3{
-                                                    font-size: 3rem;
-                                                    font-weight: 700;
-                                                    letter-spacing: -.7px;
-                                                }
-                                                &__text{
-                                                    font-size: 16px;
-                                                }
-                                            }
-                                            &__footer{
-                                                &__price__text{
-                                                    font-size: 16px;
-                                                }
-                                                &__price{
-                                                    font-size: 2.25rem;
-                                                    color: #d51243;
-                                                    font-family: 'Dosis', sans-serif;
-                                                    font-weight: 600;
-                                                }
-                                            }
-                                            a{
-                                                display: inline-flex;
-                                                align-items: center;
-                                                height: 2.5rem;
+                                            &__discount{
+                                                position: relative;
+                                                font-family: 'Dosis', sans-serif;
                                                 font-size: .875rem;
-                                                font-weight: 500;
-                                                border-radius: 1.875rem!important;
-                                                color: #fff;
-                                                background-color: #2bbef9;
-                                                border-color:  #2bbef9;
-                                                margin-top: 1.25rem;
-                                                padding: 0 1.25rem;
-                                                border: 1px solid;
-                                                outline: none;
-                                                transition: all 0.2s cubic-bezier(.28,.12,.22,1);
-                                                i{
-                                                    margin-left: 0.625rem;
+                                                font-weight: 600;
+                                                text-transform: uppercase;
+                                                letter-spacing: 1px;
+                                                color: #038e42;
+                                                margin-left: 1.25rem;
+                                                &::before{
+                                                    position: absolute;
+                                                    content: '';
+                                                    top: -5px;
+                                                    bottom: -5px;
+                                                    left: -0.75rem;
+                                                    right: -0.75rem;
+                                                    background: linear-gradient(90deg,rgba(0,184,83,.2) 0%,rgba(32,55,88,0) 100%);
+                                                    border-radius: 2.5rem;
+                                                    z-index: -1;
                                                 }
                                             }
                                         }
-                                        &__image__wrapper{
+                                        &__main{
+                                            margin-bottom: 0.9375rem;
+                                            h3{
+                                                font-size: 3rem;
+                                                font-weight: 700;
+                                                letter-spacing: -.7px;
+                                            }
+                                            &__text{
+                                                font-size: 16px;
+                                            }
+                                        }
+                                        &__footer{
+                                            &__price__text{
+                                                font-size: 16px;
+                                            }
+                                            &__price{
+                                                font-size: 2.25rem;
+                                                color: #d51243;
+                                                font-family: 'Dosis', sans-serif;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                        a{
+                                            display: inline-flex;
+                                            align-items: center;
+                                            height: 2.5rem;
+                                            font-size: .875rem;
+                                            font-weight: 500;
+                                            border-radius: 1.875rem!important;
+                                            color: #fff;
+                                            background-color: #2bbef9;
+                                            border-color:  #2bbef9;
+                                            margin-top: 1.25rem;
+                                            padding: 0 1.25rem;
+                                            border: 1px solid;
+                                            outline: none;
+                                            transition: all 0.2s cubic-bezier(.28,.12,.22,1);
+                                            i{
+                                                margin-left: 0.625rem;
+                                            }
+                                        }
+                                    }
+                                    &__image__wrapper{
+                                        // position: absolute;
+                                        width: 100%;
+                                        height: 100% !important;
+                                        top: 0;
+                                        left: 0;
+                                        img{
                                             // position: absolute;
                                             width: 100%;
-                                            height: 100% !important;
+                                            height: 100%;
                                             top: 0;
                                             left: 0;
-                                            img{
-                                                // position: absolute;
-                                                width: 100%;
-                                                height: 100%;
-                                                top: 0;
-                                                left: 0;
-                                                object-fit: cover;
-                                            }
+                                            object-fit: cover;
                                         }
                                     }
                                 }
@@ -854,6 +868,11 @@ body{
                                             transition: all 0.2s cubic-bezier(.28,.12,.22,1);
                                         }
                                     }
+                                    .active{
+                                        &::before{
+                                            opacity: 1 !important;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -864,15 +883,18 @@ body{
 
             }
             &__down{
-
-            }
+                
+        }
         }
     }
 }
 
 
+.main__body__sections__top__container__right__body__slider::-webkit-scrollbar{
+    width: 0;
+}
 
-
+  
 
 
 // RESPONSIVE

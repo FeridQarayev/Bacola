@@ -23,7 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/style/main.css" />
+    <link rel="stylesheet" href="/path/to/jquery.bxslider.css">
+    <link rel="stylesheet" href="../assets/style/main.css">
     <title>Document</title>
   </head>
   <body>
@@ -312,9 +313,34 @@
             <div class="main__body__sections__top__container">
               <div class="main__body__sections__top__container__left"></div>
               <div class="main__body__sections__top__container__right">
-                <div class="main__body__sections__top__container__right__body">
-                  <div class="main__body__sections__top__container__right__body__slider">
-                    <div id="slide-1">
+                <div id="carouselExampleIndicators" class="main__body__sections__top__container__right__body carousel slide" data-bs-ride="true">
+                  <div class="main__body__sections__top__container__right__body__slider ">
+                    <div id="slide-1" class="carousel-item active">
+                      <div class="slider__item">
+                        <div class="slider__item__content__wrapper">
+                          <div class="slider__item__content__wrapper__header">
+                            <div class="slider__item__content__wrapper__header__description">Exclusive Offer</div>
+                            <div class="slider__item__content__wrapper__header__discount">-20% Off</div>
+                          </div>
+                          <div class="slider__item__content__wrapper__main">
+                            <h3>Specialist in the grocery store</h3>
+                            <div class="slider__item__content__wrapper__main__text">Only this week. Don’t miss...</div>
+                          </div>
+                          <div class="slider__item__content__wrapper__footer">
+                            <span class="slider__item__content__wrapper__footer__price__text">from </span>
+                            <span class="slider__item__content__wrapper__footer__price">$7.99</span>
+                          </div>
+                          <a href="#">
+                            Shop Now 
+                            <i class="fa-solid fa-arrow-right-long rightMainIcon"></i>
+                          </a>
+                        </div>
+                      <div class="slider__item__image__wrapper">
+                        <img src="../assets/images/slider-image-1.jpg" alt="Bacola Oil">
+                      </div>
+                      </div>
+                    </div>
+                    <div id="slide-2" class="carousel-item">
                       <div class="slider__item">
                         <div class="slider__item__content__wrapper">
                           <div class="slider__item__content__wrapper__header">
@@ -339,11 +365,36 @@
                       </div>
                       </div>
                     </div>
+                    <div id="slide-3" class="carousel-item">
+                      <div class="slider__item">
+                        <div class="slider__item__content__wrapper">
+                          <div class="slider__item__content__wrapper__header">
+                            <div class="slider__item__content__wrapper__header__description">Exclusive Offer</div>
+                            <div class="slider__item__content__wrapper__header__discount">-40% Off</div>
+                          </div>
+                          <div class="slider__item__content__wrapper__main">
+                            <h3>Grocery full of inspiration</h3>
+                            <div class="slider__item__content__wrapper__main__text">Only this week. Don’t miss...</div>
+                          </div>
+                          <div class="slider__item__content__wrapper__footer">
+                            <span class="slider__item__content__wrapper__footer__price__text">from </span>
+                            <span class="slider__item__content__wrapper__footer__price">$6.99</span>
+                          </div>
+                          <a href="#">
+                            Shop Now 
+                            <i class="fa-solid fa-arrow-right-long rightMainIcon"></i>
+                          </a>
+                        </div>
+                      <div class="slider__item__image__wrapper">
+                        <img src="../assets/images/slider-3.jpg" alt="Bacola Oil">
+                      </div>
+                      </div>
+                    </div>
                   </div>
                   <ul>
-                    <li><button></button></li>
-                    <li><button></button></li>
-                    <li><button></button></li>
+                    <li><button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button></li>
+                    <li><button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button></li>
+                    <li><button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button></li>
                   </ul>
                 </div>
               </div>
@@ -362,6 +413,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
     <script src="../assets/js/scripts.js"></script>
   </body>
 </html>

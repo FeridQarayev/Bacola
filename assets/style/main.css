@@ -680,22 +680,32 @@ body {
   position: relative;
   overflow: hidden !important;
   border-radius: 7px;
-  display: block;
+  display: flex;
   margin: 0;
   padding: 0;
+  overflow-x: scroll;
+  width: 6090px !important;
 }
 .main__body__sections__top__container__right__body__slider #slide-1 {
+  width: 870px !important;
+  height: 100% !important;
+}
+.main__body__sections__top__container__right__body__slider #slide-2 {
   width: 870px;
   height: 100%;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item {
+.main__body__sections__top__container__right__body__slider #slide-3 {
+  width: 870px;
+  height: 100%;
+}
+.main__body__sections__top__container__right__body__slider .slider__item {
   position: relative;
   display: flex !important;
   align-items: center;
   width: 100%;
   height: 100%;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper {
   padding: 1.875rem 1.5rem;
   z-index: 1;
   position: absolute;
@@ -703,19 +713,19 @@ body {
   padding-right: 5rem;
   max-width: 70%;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper__header {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper__header {
   display: flex;
   align-items: center;
   margin-bottom: 0.9375rem;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper__header__description {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper__header__description {
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "Dosis", sans-serif;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper__header__discount {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper__header__discount {
   position: relative;
   font-family: "Dosis", sans-serif;
   font-size: 0.875rem;
@@ -725,7 +735,7 @@ body {
   color: #038e42;
   margin-left: 1.25rem;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper__header__discount::before {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper__header__discount::before {
   position: absolute;
   content: "";
   top: -5px;
@@ -736,27 +746,27 @@ body {
   border-radius: 2.5rem;
   z-index: -1;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper__main {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper__main {
   margin-bottom: 0.9375rem;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper__main h3 {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper__main h3 {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: -0.7px;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper__main__text {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper__main__text {
   font-size: 16px;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper__footer__price__text {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper__footer__price__text {
   font-size: 16px;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper__footer__price {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper__footer__price {
   font-size: 2.25rem;
   color: #d51243;
   font-family: "Dosis", sans-serif;
   font-weight: 600;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper a {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper a {
   display: inline-flex;
   align-items: center;
   height: 2.5rem;
@@ -772,16 +782,16 @@ body {
   outline: none;
   transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__content__wrapper a i {
+.main__body__sections__top__container__right__body__slider .slider__item__content__wrapper a i {
   margin-left: 0.625rem;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__image__wrapper {
+.main__body__sections__top__container__right__body__slider .slider__item__image__wrapper {
   width: 100%;
   height: 100% !important;
   top: 0;
   left: 0;
 }
-.main__body__sections__top__container__right__body__slider #slide-1 .slider__item__image__wrapper img {
+.main__body__sections__top__container__right__body__slider .slider__item__image__wrapper img {
   width: 100%;
   height: 100%;
   top: 0;
@@ -842,6 +852,13 @@ body {
   opacity: 0;
   transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
 }
+.main__body__sections__top__container__right__body ul li .active::before {
+  opacity: 1 !important;
+}
+.main__body__sections__top__container__right__body__slider::-webkit-scrollbar {
+  width: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .header__store__notice__container {
     width: 960px;
