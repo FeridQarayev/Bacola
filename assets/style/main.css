@@ -1102,14 +1102,21 @@ body {
   font-family: "Dosis", sans-serif;
 }
 .main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__price__left {
-  color: #2c2cd3;
+  font-size: 85%;
+  color: #c2c2d3;
   font-family: "Dosis", sans-serif;
-  text-decoration: line-through;
+  text-decoration: line-through !important;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__price__left__symbol {
+  font-family: "Dosis", sans-serif;
 }
 .main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__price__right {
   text-decoration: none;
   margin-left: 0.3125rem;
   color: #d51234;
+  font-family: "Dosis", sans-serif;
+}
+.main__body__sections__middle__body__left__content__product-list__container__body__list__item .product__wrapper__content__price__right__symbol {
   font-family: "Dosis", sans-serif;
 }
 .main__body__sections__middle__body__right {

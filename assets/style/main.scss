@@ -1096,10 +1096,10 @@ body{
                                                             margin-top: 0;
                                                             a{
                                                                 display: flex;
-                                                                    color: #202435;
-                                                                    text-decoration: none;
-                                                                    overflow: hidden;
-                                                                    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+                                                                color: #202435;
+                                                                text-decoration: none;
+                                                                overflow: hidden;
+                                                                transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
                                                             }
                                                         }
                                                         &__meat{
@@ -1116,11 +1116,12 @@ body{
                                                             font-weight: 600;
                                                             font-family: 'Dosis', sans-serif;
                                                             &__left{
-                                                                color: #2c2cd3;
+                                                                font-size: 85%;
+                                                                color: #c2c2d3;
                                                                 font-family: 'Dosis', sans-serif;
-                                                                text-decoration: line-through;
+                                                                text-decoration: line-through !important;
                                                                 &__symbol{
-                                                                    
+                                                                    font-family: 'Dosis', sans-serif;
                                                                 }
                                                             }
                                                             &__right{
@@ -1129,7 +1130,7 @@ body{
                                                                 color :#d51234;
                                                                 font-family: 'Dosis', sans-serif;
                                                                 &__symbol{
-
+                                                                    font-family: 'Dosis', sans-serif;
                                                                 }
                                                             }
                                                         }
