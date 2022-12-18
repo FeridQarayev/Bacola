@@ -1639,6 +1639,7 @@ body {
 }
 .main__body__sections__middle__body__right__container__banner {
   width: 100%;
+  margin-bottom: 30px;
 }
 .main__body__sections__middle__body__right__container__banner__body {
   width: 100%;
@@ -1672,6 +1673,167 @@ body {
   position: absolute;
   right: 0.625rem;
   top: -40%;
+}
+.main__body__sections__middle__body__right__container__sale {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.main__body__sections__middle__body__right__container__sale__container {
+  width: 100%;
+}
+.main__body__sections__middle__body__right__container__sale__container .module__header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+.main__body__sections__middle__body__right__container__sale__container .module__header__column {
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.main__body__sections__middle__body__right__container__sale__container .module__header__column__title {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+  margin-top: 0;
+}
+.main__body__sections__middle__body__right__container__sale__container .module__header__column__title span {
+  color: #ed174a;
+  font-family: "Dosis", sans-serif;
+}
+.main__body__sections__middle__body__right__container__sale__container .module__header__column__description {
+  padding-right: 10px;
+  display: block;
+  font-size: 0.75rem;
+  color: #9b9bb4;
+  width: 100%;
+}
+.main__body__sections__middle__body__right__container__sale__container .module__header__column a {
+  outline: none;
+  border: 1px solid;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  height: 2.125rem;
+  border-radius: 1.875rem !important;
+  color: #9b9bb4;
+  background-color: transparent;
+  border-color: #d9d9e9;
+  box-shadow: none;
+  text-decoration: none;
+  padding: 0 1.25rem;
+  transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+.main__body__sections__middle__body__right__container__sale__container .module__header__column a i {
+  font-size: 0.9375rem;
+  margin-left: 0.625rem;
+}
+.main__body__sections__middle__body__right__container__sale__container .module__header__column:last-child {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products {
+  padding: 1.875rem;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #ed174a;
+  border-radius: 7px;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 7px;
+  border: 1px solid red;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product {
+  border: 0;
+  position: relative;
+  flex: 1 1 0px;
+  min-width: 0;
+  z-index: 1;
+  transition: z-index 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__hotsale {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 4.125rem;
+  height: 4.125rem;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: #ed174a;
+  border-radius: 50%;
+  z-index: 3;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__wrapper {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__wrapper__thumbnail {
+  flex: 0 0 11.25rem;
+  max-width: 11.25rem;
+  margin-right: 1.25rem;
+  padding: 1.25rem;
+  position: relative;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__wrapper__thumbnail img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__content {
+  flex: 1;
+  padding: 0 1.25rem 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__content__header {
+  display: flex;
+  align-items: center;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__content__header .product__body__content__price {
+  display: block;
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__content__header .product__body__content__price__left {
+  font-size: 85%;
+  color: #c2c2d3;
+  font-family: "Dosis", sans-serif;
+  text-decoration: line-through !important;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__content__header .product__body__content__price__left__symbol {
+  font-family: "Dosis", sans-serif;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__content__header .product__body__content__price__right {
+  text-decoration: none;
+  margin-left: 0.3125rem;
+  color: #d51234;
+  font-family: "Dosis", sans-serif;
+}
+.main__body__sections__middle__body__right__container__sale__container__body__products__product__content__header .product__body__content__price__right__symbol {
+  font-family: "Dosis", sans-serif;
 }
 @media screen and (max-width: 1200px) {
   .header__store__notice__container {

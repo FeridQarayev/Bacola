@@ -1674,6 +1674,7 @@ body{
                             }
                             &__banner{
                                 width: 100%;
+                                margin-bottom: 30px;
                                 &__body{
                                     width: 100%;
                                     &__wrapper{
@@ -1704,6 +1705,174 @@ body{
                                             position: absolute;
                                             right: 0.625rem;
                                             top: -40%;
+                                        }
+                                    }
+                                }
+                            }
+                            &__sale{
+                                margin-bottom: 30px;
+                                width: 100%;
+                                &__container{
+                                    width: 100%;
+                                    .module{
+                                        &__header{
+                                            position: relative;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            margin-bottom: 1.875rem;
+                                            &__column{
+                                                display: inline-flex;
+                                                flex-flow: row wrap;
+                                                align-items: center;
+                                                &__title{
+                                                    font-family: 'Dosis', sans-serif;
+                                                    font-size: 1.25rem;
+                                                    font-weight: 600;
+                                                    text-transform: uppercase;
+                                                    letter-spacing: 0;
+                                                    margin-bottom: 0;
+                                                    line-height: 1.2;
+                                                    margin-top: 0;
+                                                    span{
+                                                        color: #ed174a;
+                                                        font-family: 'Dosis', sans-serif;
+                                                    }
+                                                }
+                                                &__description{
+                                                    padding-right: 10px;
+                                                    display: block;
+                                                    font-size: .75rem;
+                                                    color: #9b9bb4;
+                                                    width: 100%;
+                                                }
+                                                a{
+                                                    outline: none;
+                                                    border: 1px solid;
+                                                    display: inline-flex;
+                                                    align-items: center;
+                                                    white-space: nowrap;
+                                                    font-size: .75rem;
+                                                    height: 2.125rem;
+                                                    border-radius: 1.875rem !important;
+                                                    color: #9b9bb4;
+                                                    background-color: transparent;
+                                                    border-color: #d9d9e9;
+                                                    box-shadow: none;
+                                                    text-decoration: none;
+                                                    padding: 0 1.25rem;
+                                                    transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+                                                    i{
+                                                        font-size: .9375rem;
+                                                        margin-left: 0.625rem;
+                                                    }
+                                                }
+                                                &:last-child{
+                                                    flex-grow: 1;
+                                                    justify-content: flex-end;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &__body{
+                                        &__products{
+                                            padding: 1.875rem;
+                                            flex-direction: column;
+                                            position: relative;
+                                            border: 1px solid #ed174a;
+                                            border-radius: 7px;
+                                            &::before{
+                                                position: absolute;
+                                                content: '';
+                                                width: 100%;
+                                                height: 100%;
+                                                top: 0;
+                                                left: 0;
+                                                border-radius: 7px;
+                                                border: 1px solid red;
+                                            }
+                                            &__product{
+                                                border: 0;
+                                                position: relative;
+                                                flex: 1 1 0px;
+                                                min-width: 0;
+                                                z-index: 1;
+                                                transition: z-index 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+                                                &__hotsale{
+                                                    position: absolute;
+                                                    display: inline-flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    font-family: 'Dosis', sans-serif;
+                                                    font-size: 1.5rem;
+                                                    font-weight: 600;
+                                                    width: 4.125rem;
+                                                    height: 4.125rem;
+                                                    top: 0;
+                                                    left: 0;
+                                                    color: #fff;
+                                                    background-color: #ed174a;
+                                                    border-radius: 50%;
+                                                    z-index: 3;
+                                                }
+                                                &__wrapper{
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    z-index: 1;
+                                                    &__thumbnail{
+                                                        flex: 0 0 11.25rem;
+                                                        max-width: 11.25rem;
+                                                        margin-right: 1.25rem;
+                                                        padding: 1.25rem;
+                                                        position: relative;
+                                                        img{
+                                                            height: auto;
+                                                            max-width: 100%;
+                                                            border: none;
+                                                            border-radius: 0;
+                                                            box-shadow: none;
+                                                        }
+                                                    }
+                                                }
+                                                &__content{
+                                                    flex: 1;
+                                                    padding: 0 1.25rem 1.25rem;
+                                                    position: relative;
+                                                    z-index: 1;
+                                                    &__header{
+                                                        display: flex;
+                                                        align-items:center;
+                                                        .product__body__content__price{
+                                                            display: block;
+                                                            font-size: 1.125rem;
+                                                            margin-bottom: 0.625rem;
+                                                            font-weight: 600;
+                                                            font-family: 'Dosis', sans-serif;
+                                                            &__left{
+                                                                font-size: 85%;
+                                                                color: #c2c2d3;
+                                                                font-family: 'Dosis', sans-serif;
+                                                                text-decoration: line-through !important;
+                                                                &__symbol{
+                                                                    font-family: 'Dosis', sans-serif;
+                                                                }
+                                                            }
+                                                            &__right{
+                                                                text-decoration: none;
+                                                                margin-left: 0.3125rem;
+                                                                color :#d51234;
+                                                                font-family: 'Dosis', sans-serif;
+                                                                &__symbol{
+                                                                    font-family: 'Dosis', sans-serif;
+                                                                }
+                                                            }
+                                                        }
+                                                        .product__title{
+                                                            
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
